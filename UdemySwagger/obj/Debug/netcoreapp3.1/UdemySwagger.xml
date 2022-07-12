@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UdemySwagger</name>
+    </assembly>
+    <members>
+        <member name="M:UdemySwagger.Controllers.ProductsController.GetProduct">
+            <summary>
+            This endpoint Returns all product
+            </summary>
+            <remarks>
+            example:https://localhost:44381/api/products
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:UdemySwagger.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            This endpoint Returns product from Id
+            </summary>
+            <returns></returns>
+            <response code="404">Product is not found</response>
+            <response code="200">Product is found</response>
+        </member>
+        <member name="M:UdemySwagger.Controllers.ProductsController.PutProduct(System.Int32,UdemySwagger.Models.Product)">
+            <summary>
+            This endpoint update product
+            </summary>
+        </member>
+        <member name="M:UdemySwagger.Controllers.ProductsController.PostProduct(UdemySwagger.Models.Product)">
+            <summary>
+            This endpoint add product
+            </summary>
+            <remarks>
+            example:product json:{"name": "book", "price":10,"category": "dedective"}
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:UdemySwagger.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            This endpoint delete product
+            </summary>
+        </member>
+        <member name="P:UdemySwagger.Models.Product.Price">
+            <summary>
+            Mehsulun qiymeti
+            </summary>
+        </member>
+        <member name="P:UdemySwagger.Models.Product.Name">
+            <summary>
+            Mehsulun adi
+            </summary>
+        </member>
+        <member name="P:UdemySwagger.Models.Product.Category">
+            <summary>
+            Mehsulun kategorisi
+            </summary>
+        </member>
+    </members>
+</doc>
